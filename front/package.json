@@ -1,5 +1,5 @@
 {
-  "homepage": "https://vuthanhtung2412.github.io/ishowspeed-template",
+  "homepage": "https://alexprena.github.io/myQuizApp",
   "name": "vite",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +7,9 @@
   "scripts": {
     "generate-client": "npx openapi-typescript-codegen --input http://localhost:8000/openapi.json --output ./src/client --client axios",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:front": "vite",
+    "build": "vite build",
+    "build:front": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
